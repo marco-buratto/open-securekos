@@ -1,16 +1,16 @@
 anacron
 apt-transport-https
 avahi-daemon
+broadcom-sta-dkms
 cifs-utils
 console-data
 console-setup
 cryptmount
 cryptsetup*
 curl
-dkms linux-headers-686-pae- linux-headers-amd64-
+dkms
 dnsutils
 gettext
-gliv
 hplip
 inotify-tools
 kbd
@@ -18,7 +18,6 @@ locales
 locales-all
 locate
 lshw
-mc
 net-tools
 openntpd
 openssh-client

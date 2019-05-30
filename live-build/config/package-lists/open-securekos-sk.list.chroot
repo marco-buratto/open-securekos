@@ -1,7 +1,5 @@
-sk-apt-guardian
-sk-gnome-extensions
-sk-linux-image-update-common
-sk-personal-background
-sk-program-icons-personal
-sk-system-icons
-sk-system-theme
+#sk-linux-image-update-common --> mettere fallback boot + old kernel cleanup in pacchetto separato.
+#sk-personal-background
+#sk-system-icons
+resilient-system-theme
+#sk-factory-reset-hthin

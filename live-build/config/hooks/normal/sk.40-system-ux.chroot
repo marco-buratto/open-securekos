@@ -15,7 +15,7 @@ fi
 plymouth-set-default-theme spinfinity |&log
 
 # Secure-K OS logo.
-apt-get install -y sk-logo |&log
+#####apt-get install -y sk-logo |&log
 
 # Change gdm logo from debian-swirl.png to Secure-K.png (from sk-logo package).
 sed -i -e "s#logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'#logo='/usr/share/icons/gnome/48x48/places/Secure-K.png'#" /etc/gdm3/greeter.dconf-defaults |&log

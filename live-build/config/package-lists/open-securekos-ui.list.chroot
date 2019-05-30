@@ -44,8 +44,8 @@ gnome-shell
 gnome-shell-common
 gnome-shell-extensions
 gnome-shell-extension-dashtodock
-gnome-shell-extension-taskbar
 gnome-shell-extension-top-icons-plus
+gnome-shell-extension-trash
 gnome-software 
 gnome-sushi 
 gnome-system-monitor
@@ -60,7 +60,6 @@ gstreamer1.0-plugins-good
 #gstreamer1.0-plugins-ugly
 gstreamer1.0-pulseaudio
 gucharmap
-guvcview
 gvfs-backends
 gvfs-bin
 gvfs-fuse

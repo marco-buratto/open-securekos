@@ -12,13 +12,16 @@ fi
 ####################################################################################################################################
 
 # Set splash (Plymouth) theme.
-plymouth-set-default-theme spinfinity |&log
+plymouth-set-default-theme spinner |&log
 
-# Secure-K OS logo.
-#####apt-get install -y sk-logo |&log
+# Resilient Linux logo.
+#apt-get install -y resilient-logo |&log
 
-# Change gdm logo from debian-swirl.png to Secure-K.png (from sk-logo package).
-sed -i -e "s#logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'#logo='/usr/share/icons/gnome/48x48/places/Secure-K.png'#" /etc/gdm3/greeter.dconf-defaults |&log
+# Rebuild the initrd.
+update-initramfs -u |&log
+
+# Change gdm logo from debian-swirl.png to the one from the logo package.
+#sed -i -e "s#logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'#logo='/usr/share/icons/gnome/48x48/places/Resilient.png'#" /etc/gdm3/greeter.dconf-defaults |&log
 
 # Re-generate /var/lib/gdm3/greeter-dconf-defaults from /etc/gdm3/greeter.dconf-defaults to change gdm background and screensaver.
 /usr/share/gdm/generate-config |&log

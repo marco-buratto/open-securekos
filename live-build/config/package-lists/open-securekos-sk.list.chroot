@@ -1,5 +1,5 @@
 #sk-linux-image-update-common --> mettere fallback boot + old kernel cleanup in pacchetto separato.
-#sk-personal-background
-#sk-system-icons
+resilient-system-art
+resilient-system-icons
 resilient-system-theme
 #sk-factory-reset-hthin

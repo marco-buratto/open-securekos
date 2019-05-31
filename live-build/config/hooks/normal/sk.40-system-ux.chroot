@@ -20,6 +20,9 @@ plymouth-set-default-theme spinner |&log
 # Rebuild the initrd.
 update-initramfs -u |&log
 
+# Remove Debian gdm logo.
+sed -i -e "s#logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'#logo=''#" /etc/gdm3/greeter.dconf-defaults |&log
+
 # Change gdm logo from debian-swirl.png to the one from the logo package.
 #sed -i -e "s#logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'#logo='/usr/share/icons/gnome/48x48/places/Resilient.png'#" /etc/gdm3/greeter.dconf-defaults |&log
 

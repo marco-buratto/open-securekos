@@ -3,6 +3,6 @@ resilient-system-art
 resilient-system-icons
 resilient-system-theme
 
-#resilient-repair-boot
-#resilient-kernel-cleanup
+resilient-repair-boot
 resilient-factory-reset
+#resilient-kernel-cleanup

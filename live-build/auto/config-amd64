@@ -5,10 +5,10 @@ lb config noauto --clean \
     --architectures amd64  \
     --distribution stretch \
     --archive-areas "main contrib non-free" \
-    --iso-publisher "LumIT Labs" \
-    --iso-preparer "LumIT Labs" \
-    --iso-volume "Open Secure-K OS" \
-    --iso-application "Open Secure-K OS" \
+    --iso-publisher "The Resilient Linux Team" \
+    --iso-preparer "The Resilient Linux Team" \
+    --iso-volume "Resilient Linux" \
+    --iso-application "Resilient Linux" \
     --firmware-chroot false \
     --initsystem "systemd" \
     --security true \

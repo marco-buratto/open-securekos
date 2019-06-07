@@ -3,6 +3,6 @@ Pin: release n=stretch
 Pin-Priority: 900
 
 Package: *
-Pin: release n=osk-stretch
+Pin: release n=resilient-stretch
 Pin-Priority: 950
 

@@ -1,7 +1,8 @@
-sk-apt-guardian
-sk-gnome-extensions
-sk-linux-image-update-common
-sk-personal-background
-sk-program-icons-personal
-sk-system-icons
-sk-system-theme
+resilient-logo
+resilient-system-art
+resilient-system-icons
+resilient-system-theme
+
+resilient-repair-boot
+resilient-factory-reset
+#resilient-kernel-cleanup

@@ -4,9 +4,12 @@ RESILIENT LINUX
 What is
 ^^^^^^^
 
-    **Resilient Linux** is an operating system based on Debian GNU/Linux which features a liveng partitioning scheme, https://liveng.readthedocs.io, originally thought for live operating systems. Resilient Linux however can be installed to the hard drive as well as being used as a live system.
+**Resilient Linux** is an operating system based on Debian GNU/Linux which features a liveng partitioning scheme, https://liveng.readthedocs.io, originally thought for live operating systems. Resilient Linux however can be installed to the hard drive as well as being used as a live system.
 
-The liveng compliancy allows complete system and kernel update with a readonly system partition. This allows building next-generation live operating systems and "indestructible" installations.
+The liveng compliancy allows complete system and kernel updates with a readonly system partition. This allows building next-generation live operating systems and "indestructible" hard drive installed systems.
+
+Resilient Linux differs from the LumIT Labs's liveng definition in the way the readonly second system partition is rewritten: a hook is called at every initramfs update and not only within a kernel package's postinst. This allows using the standard Debian kernel packages and it's more robust.
+Behaviour is accomplished by forking the live-tool package.
 
 
 How to build the initial ISO image

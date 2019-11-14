@@ -42,8 +42,8 @@ LB_ZSYNC="true"
 LB_BUILD_WITH_CHROOT="true"
 
 # $LB_DEBIAN_INSTALLER: set debian-installer
-# (Default: live)
-LB_DEBIAN_INSTALLER="live"
+# (Default: false)
+LB_DEBIAN_INSTALLER="false"
 
 # $LB_DEBIAN_INSTALLER_DISTRIBUTION: set debian-installer suite
 # (Default: empty)
@@ -74,20 +74,20 @@ LB_HDD_SIZE="auto"
 LB_HDD_PARTITION_START=""
 
 # $LB_ISO_APPLICATION: set iso author
-# (Default: Debian Live)
-LB_ISO_APPLICATION="Debian Live"
+# (Default: Resilient Linux)
+LB_ISO_APPLICATION="Resilient Linux"
 
 # $LB_ISO_PREPARER: set iso preparer
-# (Default: live-build $VERSION; https://debian-live.alioth.debian.org/live-build)
-LB_ISO_PREPARER="live-build $VERSION; https://debian-live.alioth.debian.org/live-build"
+# (Default: The Resilient Linux Team)
+LB_ISO_PREPARER="The Resilient Linux Team"
 
 # $LB_ISO_PUBLISHER: set iso publisher
-# (Default: Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org)
-LB_ISO_PUBLISHER="Live Systems project; https://debian-live.alioth.debian.org/; debian-live@lists.debian.org"
+# (Default: The Resilient Linux Team)
+LB_ISO_PUBLISHER="The Resilient Linux Team"
 
 # $LB_ISO_VOLUME: set iso volume (max 32 chars)
-# (Default: Debian buster $(date +%Y%m%d-%H:%M))
-LB_ISO_VOLUME="Debian buster $(date +%Y%m%d-%H:%M)"
+# (Default: Resilient Linux)
+LB_ISO_VOLUME="Resilient Linux"
 
 # $LB_JFFS2_ERASEBLOCK: set jffs2 eraseblock size
 # (Default: unset)
@@ -102,8 +102,8 @@ LB_MEMTEST="none"
 LB_LOADLIN="true"
 
 # $LB_WIN32_LOADER: set win32-loader
-# (Default: true)
-LB_WIN32_LOADER="true"
+# (Default: false)
+LB_WIN32_LOADER="false"
 
 # $LB_NET_ROOT_FILESYSTEM: set netboot filesystem
 # (Default: nfs)
@@ -154,8 +154,8 @@ LB_ONIE_KERNEL_CMDLINE=""
 LB_FIRMWARE_BINARY="true"
 
 # $LB_FIRMWARE_CHROOT: include firmware packages in debian-installer
-# (Default: true)
-LB_FIRMWARE_CHROOT="true"
+# (Default: false)
+LB_FIRMWARE_CHROOT="false"
 
 # $LB_SWAP_FILE_PATH: set swap file path
 # (Default: )

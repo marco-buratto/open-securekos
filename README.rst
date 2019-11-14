@@ -15,7 +15,7 @@ Behaviour is accomplished by forking the live-tool package.
 How to build the initial ISO image
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A **Debian Stretch** host is required for the build; other Debian-derived systems may work.
+A **Debian Buster** host is required for the build; other Debian-derived systems may work.
 
 The Resilient Linux initial ISO image is built using the standard Debian **live-build** framework, so you first need to install it::
  
@@ -23,10 +23,10 @@ The Resilient Linux initial ISO image is built using the standard Debian **live-
 
 Git **clone this project as root**.
 
-In order to build a Resilient Linux initial image, open the terminal emulator **as root**::
+In order to build a Resilient Linux Buster-based initial image, open the terminal emulator **as root**::
 
     cd /path/to/resilientlinux/live-build
-    bash lb
+    lb build
 
 A .iso image will be built according to your host architecture (if building on an amd64, a 64bit iso will be produced; an i386 iso will be built on i386 hosts).
 We only guarantee the 64bit build to work.

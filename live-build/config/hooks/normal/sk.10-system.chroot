@@ -47,7 +47,7 @@ rm -fR /tmp/dconf |&log
 cat > /etc/os-release <<EOF
 NAME="Resilient Linux"
 PRETTY_NAME="Resilient Linux"
-VERSION="1.0"
+VERSION="2.0"
 BUILD="$(date +'%Y%m%d:%H%m')"
 BUILD_ID="$(date +'%Y%m%d:%H%m')"
 ID=resilient-linux

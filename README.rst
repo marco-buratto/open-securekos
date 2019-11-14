@@ -1,5 +1,5 @@
-RESILIENT LINUX
-===============
+RESILIENT LINUX 2.0
+===================
 
 What is
 ^^^^^^^

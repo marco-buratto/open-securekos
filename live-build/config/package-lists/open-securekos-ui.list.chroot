@@ -19,7 +19,6 @@ gdm3
 gedit
 gedit-plugins
 gjs
-gksu
 gnome-backgrounds
 gnome-bluetooth
 gnome-calculator
@@ -51,7 +50,6 @@ gnome-sushi
 gnome-system-monitor
 gnome-terminal
 gnome-themes-standard
-gnome-themes-standard-data
 gnome-user-share
 gsettings-desktop-schemas
 gstreamer1.0-plugins-base
@@ -66,8 +64,6 @@ nautilus
 nautilus-sendto
 network-manager modemmanager-
 network-manager-pptp
-network-manager-iodine
-network-manager-iodine-gnome
 network-manager-strongswan
 network-manager-openconnect-gnome
 network-manager-ssh
@@ -90,9 +86,7 @@ sound-theme-freedesktop
 system-config-printer-common
 system-config-printer-udev
 totem
-tracker-gui
 ttf-dejavu
-ttf-freefont
 vino
 xdg-user-dirs-gtk
 zeitgeist

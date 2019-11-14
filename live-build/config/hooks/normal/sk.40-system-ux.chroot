@@ -23,7 +23,3 @@ sed -i -e "s#logo='/usr/share/icons/gnome/48x48/places/debian-swirl.png'#logo='/
 # Re-generate /var/lib/gdm3/greeter-dconf-defaults from /etc/gdm3/greeter.dconf-defaults to change gdm background and screensaver.
 /usr/share/gdm/generate-config |&log
 
-# Enable HiDPI compatibility on Qt-programs.
-echo "# Enabling HiDPI compatibility on Qt programs" >> /etc/profile |&log
-echo "export QT_AUTO_SCREEN_SCALE_FACTOR=1" >> /etc/profile |&log
-

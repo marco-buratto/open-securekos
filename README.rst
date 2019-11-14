@@ -9,7 +9,7 @@ What is
 The liveng compliancy allows complete system and kernel updates with a readonly system partition. This allows building next-generation live operating systems and "indestructible" hard drive installed systems.
 
 Resilient Linux differs from the LumIT Labs's liveng definition in the way the readonly second system partition is rewritten: a hook is called at every initramfs update and not only within a kernel package's postinst. This allows using the standard Debian kernel packages and it's more robust.
-Behaviour is accomplished by forking the live-tool package.
+Behaviour is accomplished by forking the live-tool package - see the /bin/live-update-initramfs file inside.
 
 
 How to build the initial ISO image

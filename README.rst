@@ -36,10 +36,7 @@ We only guarantee the 64bit build to work.
 Some notes
 ^^^^^^^^^^
 
-* use sudo for super-cow powers;
-* during the boot, you will be asked for the decryption password of the data persistence partition - the secret you enter while deploying, if any;
-* system user will be created upon the first boot.
-
+Use sudo for super-cow powers.
 
 Resilient Linux differs from the LumIT Labs's liveng definition in the way the readonly second system partition is rewritten: a hook is called at every initramfs update and not only within a kernel package's postinst. This allows using the standard Debian kernel packages and it's more robust.
 Behaviour is accomplished by forking the live-tool package - see the /bin/live-update-initramfs file inside.

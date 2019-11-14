@@ -11,26 +11,11 @@ fi
 # System-related installations and key configurations.
 ####################################################################################################################################
 
-# Divert the following files, for we don't want them to be updated.
-programFiles=("/lib/systemd/system/gdm.service") # this way, a standard gdm3 package - and not a forked one - is installed.
-for programFile in ${programFiles[@]};
-do
-    programFileName=$(echo -n "$programFile" | sed -r -e 's#(.*)/(.*)#\2#')
-    dpkg-divert --divert /tmp/$programFileName --rename $programFile |&log
-    cp -a /tmp/$programFileName $programFile |&log
-done
-
 # Disabling root login, the Initial Setup will create a sudoers' users.
 passwd -l root
 
-# Clean fstab, it will be written later.
-rm -f /etc/fstab |&log
-
-# Force-enable Systemd NTP service, used by GNOME to automagically set time and date. 
-systemctl enable systemd-timesyncd |&log
-
-# And disable Openntpd (if installed).
-systemctl disable openntpd |&log
+# Re-enable the systemd rc.local compatibility (transitional).
+systemctl enable rc-local
 
 # User's keyboard (desktop, login screen) and language will be set by the Initial Setup; keymap must be null in /etc/default and in dconf/user.
 
@@ -66,4 +51,3 @@ chmod 755 /etc/gdm3/PostLogin/* |&log
 chmod 755 /etc/gdm3/PostLogin.d/* |&log
 chmod 755 /etc/gdm3/PostSession/* |&log
 chmod 755 /etc/gdm3/PostSession.d/* |&log
-

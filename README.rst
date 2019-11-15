@@ -6,7 +6,7 @@ What is
 
 **Resilient Linux** is an operating system based on Debian GNU/Linux which features a liveng partitioning scheme, https://liveng.readthedocs.io, originally thought for live operating systems. Resilient Linux, however, is hard drive installable: the liveng compliancy (programs and kernel updates with a readonly system partition) is thus suitable for "indestructible" hard drive installations.
 
-On the https://www.resilientlinux.com website, you can find an image for the hard drive installation (via the Resilient Linux Installer, https://github.com/marco-buratto/resilientlinux-installer, which is already installed and will write the Resilient Linux ISO image and create the complete liveng-compliant operating system).
+On the https://www.resilientlinux.com website, you can find an image for the hard drive installation (via the Resilient Linux Installer, https://github.com/marco-buratto/resilientlinux-installer, which is already installed and will write the Resilient Linux ISO image creating the complete liveng-compliant operating system).
 
 Here are the instructions on how to build the base ISO image (so the one without the Installer... installed).
 Please note that alone, this one is a plain Debian GNU/Linux live system - as said, the liveng partitioning scheme is created by the Installer.

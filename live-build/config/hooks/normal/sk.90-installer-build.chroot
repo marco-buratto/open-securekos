@@ -12,9 +12,9 @@ fi
 # The installer build comes with the Resilient Linux installer on-board. 
 ####################################################################################################################################
 
-dpkg -i /resilientlinux-installer_*.deb >/dev/null 2>&1
-apt install -y -f
+#dpkg -i /resilientlinux-installer_*.deb >/dev/null 2>&1
+#apt install -y -f
 
-rm /resilientlinux-installer_*.deb >/dev/null 2>&1
+#rm /resilientlinux-installer_*.deb >/dev/null 2>&1
 
 #/resilientlinux.iso

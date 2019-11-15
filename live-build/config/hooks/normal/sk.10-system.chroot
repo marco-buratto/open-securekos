@@ -44,10 +44,13 @@ EOF
 
 # Set includes-chroot-injected files' permissions which differ from standard umask.
 # live-build process must always be run as root, as well as git clone.
-chmod 755 /etc/rc.local |&log
-chmod 755 /etc/rc.local.d/* |&log
+chmod +x /etc/rc.local |&log
+chmod +x /etc/rc.local.d/* |&log
 
-chmod 755 /etc/gdm3/PostLogin/* |&log
-chmod 755 /etc/gdm3/PostLogin.d/* |&log
-chmod 755 /etc/gdm3/PostSession/* |&log
-chmod 755 /etc/gdm3/PostSession.d/* |&log
+chmod +x /etc/gdm3/PostLogin/* |&log
+chmod +x /etc/gdm3/PostLogin.d/* |&log
+chmod +x /etc/gdm3/PostSession/* |&log
+chmod +x /etc/gdm3/PostSession.d/* |&log
+
+chmod +x /etc/initramfs-tools/hooks/cryptsetup.hook.sh # again, cryptsetup within initrd broken. Fix it!
+

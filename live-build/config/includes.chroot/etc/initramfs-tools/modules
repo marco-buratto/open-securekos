@@ -10,4 +10,5 @@
 # raid1
 # sd_mod
 
-aes chainiv cryptomgr krng sha256 sha224 sha512 sha1 xts cbc ecb ctr dm-crypt dm-mod
+dm-crypt
+

@@ -15,6 +15,7 @@ esac
 
 . /usr/share/initramfs-tools/hook-functions
 
-copy_exec /sbin/cryptsetup /bin # copy_exec copies libs too.
+copy_exec /sbin/cryptsetup
+copy_exec /sbin/dmsetup
+copy_exec /lib/cryptsetup/askpass
 
-exit 0

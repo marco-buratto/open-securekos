@@ -38,6 +38,8 @@ Some notes
 
 Use sudo for super-cow powers.
 
+Technically Resilient Linux is a persistent (optionally encrypted) next-generation live operating system.
+
 Resilient Linux differs from the LumIT Labs's liveng definition in the way the readonly second system partition is rewritten: a hook is called at every initramfs update and not only within a kernel package's postinst. This allows using the standard Debian kernel packages and it's more robust.
 Behaviour is accomplished by forking the live-tool package - see the /bin/live-update-initramfs file inside.
 

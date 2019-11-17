@@ -11,4 +11,5 @@
 # sd_mod
 
 dm-crypt
-
+af_alg
+algif_skcipher

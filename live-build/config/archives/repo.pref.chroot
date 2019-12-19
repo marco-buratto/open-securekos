@@ -1,0 +1,13 @@
+Package: *
+Pin: release n=buster
+Pin-Priority: 900
+
+Package: *
+Pin: release n=resilient-stretch
+Pin-Priority: 1000
+
+Package: virtualbox-*
+Pin: release n=sid
+Pin-Priority: 400
+
+

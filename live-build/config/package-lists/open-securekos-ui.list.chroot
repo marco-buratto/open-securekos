@@ -88,9 +88,9 @@ system-config-printer-udev
 totem
 ttf-dejavu
 vino
-virtualbox-guest-dkms
-virtualbox-guest-utils
-virtualbox-guest-x11
+#virtualbox-guest-dkms
+#virtualbox-guest-utils
+#virtualbox-guest-x11
 xdg-user-dirs-gtk
 zeitgeist
 zenity

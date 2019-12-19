@@ -6,3 +6,7 @@ Package: *
 Pin: release n=resilient-stretch
 Pin-Priority: 950
 
+Package: *
+Pin: release n=sid
+Pin-Priority: 800
+

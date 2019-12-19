@@ -4,7 +4,7 @@ Pin-Priority: 900
 
 Package: *
 Pin: release n=resilient-stretch
-Pin-Priority: 950
+Pin-Priority: 1000
 
 Package: virtualbox-*
 Pin: release n=sid

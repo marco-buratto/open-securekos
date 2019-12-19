@@ -2,8 +2,8 @@ Package: *
 Pin: release n=buster
 Pin-Priority: 900
 
-Package: live-tools
-Pin: release n=stretch # resilient-stretch
+Package: *
+Pin: release o=resilient-stretch
 Pin-Priority: 1000
 
 Package: virtualbox-*

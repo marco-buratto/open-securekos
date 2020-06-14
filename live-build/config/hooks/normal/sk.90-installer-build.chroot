@@ -3,18 +3,15 @@
 LOGFILE="/dev/null"
 COLOR='\e[91m'
 
-if [ -r  /live-build/config/hooks/normal/sk.00-functions.utils ]; then 
+####################################################################################################################################
+# Resilient Linux Installer.
+####################################################################################################################################
+
+if [ -r  /live-build/config/hooks/normal/sk.00-functions.utils ]; then
     . /live-build/config/hooks/normal/sk.00-functions.utils
 fi
 
-####################################################################################################################################
-# This hook is for the installer image available on the website, only.
-# The installer build comes with the Resilient Linux installer on-board. 
-####################################################################################################################################
+wget https://github.com/marco-buratto/resilientlinux-installer/releases/download/2.1/resilientlinux-installer_2.1-1_all.deb
+dpkg -i resilientlinux-installer_*.deb; apt install -y -f
 
-#dpkg -i /resilientlinux-installer_*.deb >/dev/null 2>&1
-#apt install -y -f
-
-#rm /resilientlinux-installer_*.deb >/dev/null 2>&1
-
-#/resilientlinux.iso
+rm resilientlinux-installer_*.deb

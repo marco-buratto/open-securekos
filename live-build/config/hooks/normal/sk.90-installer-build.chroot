@@ -11,7 +11,7 @@ if [ -r  /live-build/config/hooks/normal/sk.00-functions.utils ]; then
     . /live-build/config/hooks/normal/sk.00-functions.utils
 fi
 
-wget https://github.com/marco-buratto/resilientlinux-installer/releases/download/2.1/resilientlinux-installer_2.1-1_all.deb
+wget https://github.com/marco-buratto/resilientlinux-installer/releases/download/2.2/resilientlinux-installer_2.2-1_all.deb
 dpkg -i resilientlinux-installer_*.deb; apt install -y -f
 
 rm resilientlinux-installer_*.deb

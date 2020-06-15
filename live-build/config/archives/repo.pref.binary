@@ -2,10 +2,6 @@ Package: *
 Pin: release n=buster
 Pin-Priority: 900
 
-Package: libreoffice*
-Pin: release n=buster-backports
-Pin-Priority: 950
-
 Package: *
 Pin: release o=resilient-stretch stretch
 Pin-Priority: 1000

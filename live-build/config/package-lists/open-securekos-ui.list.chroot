@@ -59,6 +59,7 @@ gucharmap
 gvfs-backends
 gvfs-bin
 gvfs-fuse
+libreoffice
 mutter
 nautilus
 nautilus-sendto
